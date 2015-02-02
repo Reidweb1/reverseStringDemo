@@ -11,6 +11,7 @@
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *labelTextField;
+@property (weak, nonatomic) IBOutlet UILabel *mainTextLabel;
 
 @end
 
@@ -27,7 +28,21 @@
 }
 
 - (IBAction)changeButtonClicked:(id)sender {
-    
+    if ([self.labelTextField.text length] > 0) {
+        self.mainTextLabel.text = [self reverseString: self.labelTextField.text];
+        NSLog(@"%@", self.labelTextField.text);
+    }
+}
+
+- (NSString *) reverseString: (NSString *)text {
+    NSMutableString *reversedString = [NSMutableString string];
+    NSInteger index = [text length];
+    while (index > 0) {
+        index--;
+        NSRange range = NSMakeRange(index, 1);
+        [reversedString appendString:[text substringWithRange:range]];
+    }
+    return reversedString;
 }
 
 @end

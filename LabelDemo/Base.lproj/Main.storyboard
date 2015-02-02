@@ -52,6 +52,7 @@
                     </view>
                     <connections>
                         <outlet property="labelTextField" destination="nnL-FY-WA1" id="e3t-YV-s3A"/>
+                        <outlet property="mainTextLabel" destination="hxN-Zh-Kie" id="08o-a2-2OO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
