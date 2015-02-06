@@ -38,6 +38,12 @@
                                     <action selector="changeButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mrN-Kp-xTf"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1xg-wb-O5z">
+                                <rect key="frame" x="277" y="285" width="44" height="44"/>
+                                <state key="normal" image="Test">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -53,10 +59,14 @@
                     <connections>
                         <outlet property="labelTextField" destination="nnL-FY-WA1" id="e3t-YV-s3A"/>
                         <outlet property="mainTextLabel" destination="hxN-Zh-Kie" id="08o-a2-2OO"/>
+                        <outlet property="myButton" destination="1xg-wb-O5z" id="BgP-Wf-xy8"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Test" width="44" height="44"/>
+    </resources>
 </document>

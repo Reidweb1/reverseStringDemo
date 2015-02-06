@@ -12,6 +12,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *labelTextField;
 @property (weak, nonatomic) IBOutlet UILabel *mainTextLabel;
+@property (weak, nonatomic) IBOutlet UIButton *myButton;
 
 @end
 
@@ -19,6 +20,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self.myButton setImage: [UIImage imageNamed:@"Test"] forState: UIControlStateNormal];
+    
     // Do any additional setup after loading the view, typically from a nib.
 }
 
